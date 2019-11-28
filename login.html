@@ -50,24 +50,24 @@
             </ul>
         </div>
     </nav>
-    <form  style="margin-top: 3%">
+    <form  style="margin-top: 3%" name="Form" onsubmit="petition()">
         <div class="form-row justify-content-center" >
             <div class="form-group col-md-8 ">
-                <strong><label for="user">Usuario*</label></strong>
-                <input type="email" required class="form-control" id="userlogin" placeholder="Usuario">
+                <strong><label>Usuario*</label></strong>
+                <input type="text" class="form-control" required="required"
+                       id="userlogin" placeholder="Usuario">
             </div>
             <div class="form-group col-md-8">
-                <strong><label for="pass">Clave*</label></strong>
-                <input type="password" required class="form-control" id="passlogin" placeholder="Clave" >
+                <strong><label>Clave*</label></strong>
+                <input type="password" class="form-control" required="required" id="passlogin"
+                       placeholder="Clave" >
+            </div>
+            <div class="form-group col-md-8 text-center">
+                <button type="submit" class="btn btn-primary">Entrar</button>
             </div>
         </div>
-
-
     </form>
-    <div class="text-center">
-        <button type="button" class="btn btn-primary " onclick="petition()" >Entrar</button>
-    </div>
-    <div><input type="text" id="test"></div>
+
 </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
