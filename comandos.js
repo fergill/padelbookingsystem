@@ -24,10 +24,19 @@ function TrataRespuesta() {
         var respuesta;
         if (http_request.status == 200) {
             respuesta = http_request.response;
+            sessionStorage.setItem("token", respuesta);
+            $("#myModal").modal("show");
+            $()
         } else {
             alert("Error con la URL");
         }
 }
+
+
+
+
+
+
 
 
 
